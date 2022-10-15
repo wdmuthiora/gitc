@@ -1,0 +1,30 @@
+<hr>
+<div class="card">
+  <div class="card-body">
+    <h4 class="card-title">
+      <button type="button" (click)="getItems()"class="btn btn-default activebutton">Get Items</button>
+    </h4>
+  </div>
+  
+</div>
+
+<table class="table table-dark table-striped" *ngFor="let item of items">
+  <thead>
+    <tr>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <p class="btn btn-sm btn-warning pull-right">{{item.Id}}</p>
+      </td>
+      <td>
+        <p class="btn btn-sm btn-warning pull-right">{{item.Message}}</p>
+      </td>
+      <td>
+        <p class="btn btn-sm btn-warning pull-right">{{item.Age}}</p>
+      </td>
+    </tr>
+  </tbody>
+</table>

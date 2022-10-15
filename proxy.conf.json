@@ -1,0 +1,7 @@
+{
+  "/api": {
+    "target": "http://developers.gictsystems.com/api/dummy",
+    "secure": false,
+    "logLevel": "debug"
+  }
+}

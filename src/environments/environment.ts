@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  apiBaseUrl: 'http://developers.gictsystems.com/api/dummy',
+  bearerToken: 'Bearer ALDJAK23423JKSLAJAF23423J23SAD3',
 };
 
 /*

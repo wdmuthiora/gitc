@@ -8,22 +8,25 @@ import { User } from '../user';
   styleUrls: ['./form.component.css'],
 })
 export class FormComponent implements OnInit {
-  myForm: FormGroup;
 
+  myForm: FormGroup;
   firstName: FormControl;
   lastName: FormControl;
   email: FormControl;
   phone: FormControl;
   address: FormControl;
-
   
   submit() {
     if (this.myForm.valid) {
-      
+      console.log(this.myForm.value);
     }
-  };
+  }
 
-  constructor() {}
+  reset() {
+    this.myForm.reset();
+  }
+
+  constructor() { }
 
   ngOnInit() {
     this.firstName = new FormControl('', [
@@ -53,5 +56,7 @@ export class FormComponent implements OnInit {
       phone: this.phone,
       address: this.address,
     });
+
   }
+
 }
